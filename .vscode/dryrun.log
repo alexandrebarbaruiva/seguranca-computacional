@@ -1,0 +1,18 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/alexandre/dev/seguranca-computacional'
+mkdir -p dep bin include src
+g++  src/cipher.cpp -M -MT dep/cipher.d -MT bin/cipher.o -MP -MF dep/cipher.d -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self
+g++  src/cipher.cpp -c -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self -o bin/cipher.o
+g++  src/functions.cpp -M -MT dep/functions.d -MT bin/functions.o -MP -MF dep/functions.d -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self
+g++  src/functions.cpp -c -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self -o bin/functions.o
+g++  src/main.cpp -M -MT dep/main.d -MT bin/main.o -MP -MF dep/main.d -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self
+g++  src/main.cpp -c -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self -o bin/main.o
+g++  src/menu.cpp -M -MT dep/menu.d -MT bin/menu.o -MP -MF dep/menu.d -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self
+g++  src/menu.cpp -c -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self -o bin/menu.o
+g++  src/other.cpp -M -MT dep/other.d -MT bin/other.o -MP -MF dep/other.d -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self
+g++  src/other.cpp -c -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self -o bin/other.o
+g++  src/recover.cpp -M -MT dep/recover.d -MT bin/recover.o -MP -MF dep/recover.d -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self
+g++  src/recover.cpp -c -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self -o bin/recover.o
+g++ -o vigenere bin/cipher.o bin/functions.o bin/main.o bin/menu.o bin/other.o bin/recover.o -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self
+make: Leaving directory '/home/alexandre/dev/seguranca-computacional'
+ 

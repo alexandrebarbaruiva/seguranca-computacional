@@ -1,0 +1,573 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Jul 31 15:52:31 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = pop
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# makefile (from 'Makefile', line 17)
+SRC_PATH = src
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+MANDATORY_PATH = /usr/share/gconf/pop.mandatory.path
+# environment
+VSCODE_CWD = /home/alexandre
+# environment
+WINDOWPATH = 2
+# environment
+NVM_DIR = /home/alexandre/.nvm
+# default
+ 
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/alexandre/dev/seguranca-computacional
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+XDG_DATA_DIRS = /usr/share/pop:/home/alexandre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
+# environment
+OLDPWD = /home/alexandre
+# makefile (from 'Makefile', line 24)
+TEST_FILES = $(wildcard $(TEST_PATH)/*.cpp)
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+NVM_INC = /home/alexandre/.nvm/versions/node/v17.3.1/include/node
+# environment
+VSCODE_CODE_CACHE_PATH = /home/alexandre/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'Makefile', line 23)
+INC_FILES = $(wildcard $(INC_PATH)/*.hpp)
+# makefile
+CURDIR := /home/alexandre/dev/seguranca-computacional
+# makefile (from 'Makefile', line 7)
+RMDIR = rm -rdf
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'Makefile', line 16)
+INC_PATH = include
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+NVM_BIN = /home/alexandre/.nvm/versions/node/v17.3.1/bin
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-pop:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+P9K_SSH = 0
+# environment
+XDG_SESSION_DESKTOP = pop
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+ZSH = /home/alexandre/.oh-my-zsh
+# environment
+VSCODE_PID = 3042
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 12)
+FLAGS = -std=c++11 -Wall -pedantic -Wextra -Wno-unused-parameter -Werror=init-self
+# environment
+SESSION_MANAGER = local/pop-os:@/tmp/.ICE-unix/1905,unix/pop-os:/tmp/.ICE-unix/1905
+# automatic
+*F = $(notdir $*)
+# environment
+QT_QPA_PLATFORMTHEME = gtk2
+# makefile (from 'Makefile', line 18)
+TEST_PATH = tests
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'Makefile', line 32)
+EXEC = vigenere
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 6)
+COMPILER = g++
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# makefile (from 'Makefile', line 22)
+CPP_FILES = $(wildcard $(SRC_PATH)/*.cpp)
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/alexandre/.nvm/versions/node/v17.3.1/bin:/home/alexandre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/alexandre/.dotnet/tools
+# default
+MAKEFILES := 
+# makefile (from 'Makefile', line 20)
+DEP_PATH = dep
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 30)
+OBJ_FILES = $(addprefix $(BIN_PATH)/,$(notdir $(CPP_FILES:.cpp=.o)))
+# environment
+INVOCATION_ID = 032149b9a36b428ba0594a8b6272838f
+# environment
+USERNAME = alexandre
+# makefile (from 'Makefile', line 19)
+BIN_PATH = bin
+# automatic
+?F = $(notdir $?)
+# makefile (from 'Makefile', line 10)
+DEP_FLAGS = -M -MT $@ -MT $(BIN_PATH)/$(*F).o -MP -MF $@
+# environment
+GTK_IM_MODULE = ibus
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+DESKTOP_SESSION = pop
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = pop:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = alexandre
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 8)
+RM = rm -f
+# environment
+DISPLAY = :1
+# environment
+USER = alexandre
+# environment
+GTK_MODULES = gail:atk-bridge:appmenu-gtk-module
+# environment
+DEFAULTS_PATH = /usr/share/gconf/pop.default.path
+# default
+MAKE_VERSION := 4.3
+# environment
+MANAGERPID = 1670
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3042
+# makefile (from 'Makefile', line 29)
+DEP_FILES = $(addprefix $(DEP_PATH)/,$(addsuffix .d,$(FILE_NAMES)))
+# environment
+PAGER = less
+# makefile (from 'Makefile', line 27)
+ALL_FILES := src/cipher.cpp src/functions.cpp src/other.cpp src/recover.cpp include/cipher.hpp include/functions.hpp include/other.hpp include/recover.hpp tests/tests.cpp
+# environment
+_ = /usr/share/code/code
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# makefile (from 'Makefile', line 14)
+DFLAGS = -ggdb -O0 -DDEBUG
+# environment
+NVM_CD_FLAGS = -q
+# environment
+JOURNAL_STREAM = 8:37062
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/alexandre
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-489c886b-1.69.2-main.sock
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+PYTHONBREAKPOINT = ipdb.set_trace
+# environment
+XDG_MENU_PREFIX = gnome-
+# makefile (from 'Makefile', line 28)
+FILE_NAMES = $(sort $(notdir $(CPP_FILES:.cpp=)) $(notdir $(INC_FILES:.h=)))
+# environment
+GDMSESSION = pop
+# variable set hash-table stats:
+# Load=123/1024=12%, Rehash=0, Collisions=18/199=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# dep: could not be stat'd.
+# include (device 66307, inode 46768271): 8 files, no impossibilities.
+# src (device 66307, inode 46768266): 8 files, no impossibilities.
+# . (device 66307, inode 46104969): 14 files, no impossibilities.
+# tests (device 66307, inode 46768265): 5 files, no impossibilities.
+
+# 35 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+bin/%.o: dep/%.d | folders
+#  recipe to execute (from 'Makefile', line 55):
+	$(COMPILER) $(INC_PATHS) $(addprefix $(SRC_PATH)/,$(notdir $(<:.d=.cpp))) -c $(FLAGS) -o $@
+
+dep/%.d: src/%.cpp | folders
+#  recipe to execute (from 'Makefile', line 58):
+	$(COMPILER) $(INC_PATHS) $< $(DEP_FLAGS) $(FLAGS)
+
+ 
+# 2 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+dep/recover.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+dep/recover.hpp.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+dep/other.hpp.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+dep/menu.hpp.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/cipher.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 13:49:41.619836417
+#  File has been updated.
+#  Successfully updated.
+
+bin/cipher.o: dep/cipher.d | folders
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'cipher'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+#  recipe to execute (from 'Makefile', line 55):
+	$(COMPILER) $(INC_PATHS) $(addprefix $(SRC_PATH)/,$(notdir $(<:.d=.cpp))) -c $(FLAGS) -o $@
+
+.PRECIOUS: dep/cipher.d dep/cipher.hpp.d dep/functions.d dep/functions.hpp.d dep/main.d dep/main.hpp.d dep/menu.d dep/menu.hpp.d dep/other.d dep/other.hpp.d dep/recover.d dep/recover.hpp.d
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'Makefile', line 63)
+debug: FLAGS += $(DFLAGS)
+debug: vigenere
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-31 15:52:27.479651486
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+dep/main.hpp.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/other.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 70):
+	$(RMDIR) $(DEP_PATH)
+	$(RMDIR) $(BIN_PATH)
+	$(RM) $(EXEC)
+	$(RM) test
+
+# Not a target:
+dep/functions.hpp.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+dep/other.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+dep/main.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+vigenere: bin/cipher.o bin/functions.o bin/main.o bin/menu.o bin/other.o bin/recover.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+#  recipe to execute (from 'Makefile', line 52):
+	$(COMPILER) -o $@ $^ $(FLAGS)
+
+# Not a target:
+dep/menu.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/menu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: vigenere
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 89):
+	@echo Available targets:
+	@echo - release: Build the release version
+	@echo - debug: Build the debug version
+	@echo - test: Build the test files
+	@echo - clean: Cleans generated files
+	@echo - folders: Generates project directories
+	@echo - help: Show help
+
+# Not a target:
+dep/cipher.hpp.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 67):
+	$(COMPILER) $(ALL_FILES) -o $@ $^ $(FLAGS)
+
+# Not a target:
+dep/functions.d:
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+dep/cipher.d: src/cipher.cpp | folders
+#  Precious file (prerequisite of .PRECIOUS).
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'cipher'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+#  recipe to execute (from 'Makefile', line 58):
+	$(COMPILER) $(INC_PATHS) $< $(DEP_FLAGS) $(FLAGS)
+
+# makefile (from 'Makefile', line 60)
+release: FLAGS += $(RFLAGS)
+release: vigenere
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+folders:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := folders
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
+#  recipe to execute (from 'Makefile', line 82):
+	@mkdir -p $(DEP_PATH) $(BIN_PATH) $(INC_PATH) $(SRC_PATH)
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: release debug clean folders help
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+bin/functions.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/recover.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=32/1024=3%, Rehash=0, Collisions=3/88=3%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 66 / storage = 725 B / avg = 10 B
+# current buf: size = 8162 B / used = 725 B / count = 66 / avg = 10 B
+
+# strcache performance: lookups = 113 / hit rate = 41%
+# hash-table stats:
+# Load=66/8192=1%, Rehash=0, Collisions=0/113=0%
+# Finished Make data base on Sun Jul 31 15:52:31 2022
+
+ 
