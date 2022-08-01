@@ -122,7 +122,7 @@ TEST_CASE("Run all subsets", "[all]")
 
         REQUIRE(cipher(expectedMessage, expectedKey) == expectedDecipheredMessage);
         REQUIRE(decipher(expectedDecipheredMessage, expectedKey) == expectedMessage);
-        REQUIRE(guessKeyByMessage(expectedDecipheredMessage) == expectedKey);
+        REQUIRE(guessKeyByMessage(expectedDecipheredMessage, "en") == expectedKey);
     }
 
     SECTION("Subset 2 - Medium message, small key")
@@ -134,7 +134,7 @@ TEST_CASE("Run all subsets", "[all]")
 
         REQUIRE(cipher(expectedMessage, expectedKey) == expectedDecipheredMessage);
         REQUIRE(decipher(expectedDecipheredMessage, expectedKey) == expectedMessage);
-        REQUIRE(guessKeyByMessage(expectedDecipheredMessage) == expectedKey);
+        REQUIRE(guessKeyByMessage(expectedDecipheredMessage, "en") == expectedKey);
     }
 
     SECTION("Subset 3 - Small message, small key")
@@ -146,7 +146,7 @@ TEST_CASE("Run all subsets", "[all]")
 
         REQUIRE(cipher(expectedMessage, expectedKey) == expectedDecipheredMessage);
         REQUIRE(decipher(expectedDecipheredMessage, expectedKey) == expectedMessage);
-        REQUIRE(guessKeyByMessage(expectedDecipheredMessage) == expectedKey);
+        REQUIRE(guessKeyByMessage(expectedDecipheredMessage, "en") == expectedKey);
     }
 
     SECTION("Subset 4 - Large message, big key")
@@ -158,7 +158,7 @@ TEST_CASE("Run all subsets", "[all]")
 
         REQUIRE(cipher(expectedMessage, expectedKey) == expectedDecipheredMessage);
         REQUIRE(decipher(expectedDecipheredMessage, expectedKey) == expectedMessage);
-        REQUIRE(guessKeyByMessage(expectedDecipheredMessage) == expectedKey);
+        REQUIRE(guessKeyByMessage(expectedDecipheredMessage, "en") == expectedKey);
     }
 
     SECTION("Subset 5 - Medium message, big key")
@@ -171,7 +171,7 @@ TEST_CASE("Run all subsets", "[all]")
         REQUIRE(cipher(expectedMessage, expectedKey) == expectedDecipheredMessage);
         REQUIRE(decipher(expectedDecipheredMessage, expectedKey) == expectedMessage);
         // Algorithm is unable to find correct key due to non ideal message and key
-        REQUIRE(guessKeyByMessage(expectedDecipheredMessage) != expectedKey);
+        REQUIRE(guessKeyByMessage(expectedDecipheredMessage, "en") != expectedKey);
     }
 
     SECTION("Subset 6 - Small message, big key")
@@ -184,7 +184,7 @@ TEST_CASE("Run all subsets", "[all]")
         REQUIRE(cipher(expectedMessage, expectedKey) == expectedDecipheredMessage);
         REQUIRE(decipher(expectedDecipheredMessage, expectedKey) == expectedMessage);
         // Algorithm is unable to find correct key due to non ideal message and key
-        REQUIRE(guessKeyByMessage(expectedDecipheredMessage) != expectedKey);
+        REQUIRE(guessKeyByMessage(expectedDecipheredMessage, "en") != expectedKey);
     }
 
     SECTION("Subset 7 - Portuguese message, small key")
@@ -196,7 +196,7 @@ TEST_CASE("Run all subsets", "[all]")
 
         REQUIRE(cipher(expectedMessage, expectedKey) == expectedDecipheredMessage);
         REQUIRE(decipher(expectedDecipheredMessage, expectedKey) == expectedMessage);
-        REQUIRE(guessKeyByMessage(expectedDecipheredMessage) == expectedKey);
+        REQUIRE(guessKeyByMessage(expectedDecipheredMessage, "pt") == expectedKey);
     }
 
     SECTION("Subset 8 - Portuguese message, medium key")
@@ -208,6 +208,6 @@ TEST_CASE("Run all subsets", "[all]")
 
         REQUIRE(cipher(expectedMessage, expectedKey) == expectedDecipheredMessage);
         REQUIRE(decipher(expectedDecipheredMessage, expectedKey) == expectedMessage);
-        REQUIRE(guessKeyByMessage(expectedDecipheredMessage) == expectedKey);
+        REQUIRE(guessKeyByMessage(expectedDecipheredMessage, "pt") == expectedKey);
     }
 }

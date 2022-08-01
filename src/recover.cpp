@@ -96,6 +96,7 @@ int findKeyLength(std::string message)
     return keyLength;
 }
 
+// Analyze frequency from subsets/sequences to get table of most likely combination
 char analyzeFrequency(std::string sequence)
 {
     std::vector<float> chiSquareds(26, 0.0f);
@@ -108,6 +109,7 @@ char analyzeFrequency(std::string sequence)
         FREQUENCY = EN_FREQUENCY;
     }
 
+    // Calculate chi squared for all letters
     for (int offsetValue = 0; offsetValue < (int)ALPHABET.size(); offsetValue++)
     {
         float chiSquaredSum = 0.0f;
@@ -127,14 +129,15 @@ char analyzeFrequency(std::string sequence)
         chiSquareds.push_back(chiSquaredSum);
         chiSquareds[offsetValue] = chiSquaredSum;
     }
-    int sequenceShift = std::min_element(chiSquareds.begin(), chiSquareds.end()) - chiSquareds.begin() + 65;
+    int sequenceCharacter = std::min_element(chiSquareds.begin(), chiSquareds.end()) - chiSquareds.begin() + 65;
 
-    return (char)sequenceShift;
+    return (char)sequenceCharacter;
 }
 
 std::string guessKeyByMessage(std::string message, std::string language)
 {
     int keyLength = findKeyLength(message);
+    // Set word frequency based on language
     if (language == "pt")
     {
         FREQUENCY = PT_FREQUENCY;
