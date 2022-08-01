@@ -21,5 +21,6 @@
 
 std::string readFromFile(std::string fileName);
 std::string convertToUpper(std::string text);
+std::string removeNonAlpha(std::string text);
 
 #endif

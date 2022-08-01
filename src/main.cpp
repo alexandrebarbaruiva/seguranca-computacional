@@ -13,64 +13,63 @@
 
 int main(int argc, char **argv)
 {
-    if (argc == 1)
-    {
-        // menu();
-    }
-    else if (argc == 2)
-    {
-        startAnalysis(argv);
-    }
-    else if (argc == 3)
+    if (argc == 3)
     {
         startCipherOrDecipher(argv);
     }
+    else
+    {
+        showInfoMessage();
+    }
+    return 0;
 }
 
 void startCipherOrDecipher(char **argv)
 {
     std::string command = argv[1];
-    std::string messageKey = argv[2];
+    std::string secondArgument = argv[2];
     std::string inputMessage;
     std::string outputMessage;
 
     if (command == "cifrar")
     {
-        std::cout << "cifrar " << messageKey << std::endl;
+        std::cout << "cifrar " << secondArgument << std::endl;
 
         inputMessage = readFromFile("cipher_message.txt");
 
-        outputMessage = cipher(inputMessage, messageKey);
+        outputMessage = cipher(inputMessage, secondArgument);
         std::cout << outputMessage << std::endl;
     }
     else if (command == "decifrar")
     {
-        std::cout << "decifrar " << messageKey << std::endl;
+        std::cout << "decifrar " << secondArgument << std::endl;
 
         inputMessage = readFromFile("decipher_message.txt");
 
-        outputMessage = decipher(inputMessage, messageKey);
+        outputMessage = decipher(inputMessage, secondArgument);
         std::cout << outputMessage << std::endl;
+    }
+    else if (command == "analisar")
+    {
+        inputMessage = readFromFile("analyze_message.txt");
+        guessKeyByMessage(inputMessage, secondArgument);
     }
     else
     {
-        std::cout << command << ": comando não encontrado.\n";
-        std::cout << "Use `cifrar`, `decifrar` como comandos\n";
+        std::cout << "Comando não encontrado.\n\n";
+        showInfoMessage();
     }
 }
 
-void startAnalysis(char **argv)
+void showInfoMessage()
 {
-    std::string command = argv[1];
-    std::string inputMessage;
-    std::string outputMessage;
-
-    if (command == "analisar")
-    {
-    }
-    else
-    {
-        std::cout << command << ": comando não encontrado.\n";
-        std::cout << "Use `analisar` como comandos\n";
-    }
+    std::cout << "Comandos disponíveis:\n";
+    std::cout << "\t`menu` para iniciar a sessão interativa\n";
+    std::cout << "\t`cifrar $senha` sendo $senha a palavra a ser usada para cifrar\n";
+    std::cout << "\t`decifrar $senha` sendo $senha a palavra a ser usada para decifrar\n";
+    std::cout << "\t`analisar $lingua` sendo $lingua igual a `pt` ou `en`\n";
+    std::cout << "\nExemplos:\n";
+    std::cout << "./vigenere cifrar DINOSSAURO\n";
+    std::cout << "./vigenere analisar pt\n";
+    std::cout << "./vigenere menu\n";
 }

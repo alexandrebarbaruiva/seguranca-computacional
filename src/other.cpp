@@ -11,7 +11,6 @@
  */
 #include "../include/other.hpp"
 
-
 std::string readFromFile(std::string fileName)
 {
     std::ifstream messageFile(fileName);
@@ -24,7 +23,18 @@ std::string readFromFile(std::string fileName)
     return "";
 }
 
-std::string convertToUpper(std::string text) {
+std::string convertToUpper(std::string text)
+{
     std::transform(text.begin(), text.end(), text.begin(), ::toupper);
+    return text;
+}
+
+std::string removeNonAlpha(std::string text)
+{
+    text.erase(
+        std::remove_if(
+            text.begin(), text.end(), [](char c)
+            { return !std::isalpha(c); }),
+        text.end());
     return text;
 }

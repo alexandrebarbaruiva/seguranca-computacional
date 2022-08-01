@@ -13,10 +13,12 @@
 #define RECOVER_HEADER
 #include <unordered_map>
 #include <algorithm>
+#include <cmath>
 #include <string>
 #include <iostream>
 #include <string>
 #include <vector>
+#include "other.hpp"
 
 std::unordered_map<char, int> getAllLettersFrequency(std::string section);
 
@@ -24,8 +26,12 @@ float getIndexCoincidence(std::string section);
 
 int findKeyLength(std::string message);
 
+int checkDuplicatedSubset(std::vector<float> indexCoincidenceTable);
+
 std::string findKey(std::string message, int keyLength);
 
-std::string analyzeFrequency(std::string sequence);
+char analyzeFrequency(std::string sequence);
+
+std::string guessKeyByMessage(std::string message, std::string language="en");
 
 #endif

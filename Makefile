@@ -63,6 +63,7 @@ release: $(EXEC)
 debug: FLAGS += $(DFLAGS)
 debug: $(EXEC)
 
+test: FLAGS += $(DFLAGS)
 test:
 	$(COMPILER) $(ALL_FILES) -o $@ $^ $(FLAGS)
 

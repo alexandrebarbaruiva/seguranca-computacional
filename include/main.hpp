@@ -12,12 +12,12 @@
 #ifndef MAIN_HEADER
 #define MAIN_HEADER
 #include <iostream>
-#include "menu.hpp"
 #include "cipher.hpp"
+#include "recover.hpp"
 #include "other.hpp"
 
 int main(int argc, char **argv);
 void startCipherOrDecipher(char **argv);
-void startAnalysis(char **argv);
+void showInfoMessage();
 
 #endif
