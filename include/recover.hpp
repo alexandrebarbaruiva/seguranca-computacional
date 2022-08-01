@@ -26,7 +26,7 @@ float getIndexCoincidence(std::string section);
 
 int findKeyLength(std::string message);
 
-int checkDuplicatedSubset(std::vector<float> indexCoincidenceTable);
+std::string checkDuplicatedSubsetOnKey(std::string key);
 
 std::string findKey(std::string message, int keyLength);
 

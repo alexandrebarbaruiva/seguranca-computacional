@@ -109,6 +109,24 @@ TEST_CASE("Key finder works properly", "[recover.findKey]")
     REQUIRE(findKey(ciphered, 5) == "ARARA");
 }
 
+TEST_CASE("Duplicated subset on key works properly", "[recover.checkDuplicatedSubsetOnKey]")
+{
+    SECTION("BOYBOYBOY to BOY")
+    {
+        REQUIRE(checkDuplicatedSubsetOnKey("BOYBOYBOY") == "BOY");
+    }
+
+    SECTION("ARARAARARAARARA to ARARA")
+    {
+        REQUIRE(checkDuplicatedSubsetOnKey("ARARAARARAARARA") == "ARARA");
+    }
+
+    SECTION("PAPAGAIO stays PAPAGAIO")
+    {
+        REQUIRE(checkDuplicatedSubsetOnKey("PAPAGAIO") == "PAPAGAIO");
+    }
+}
+
 TEST_CASE("Run all subsets", "[all]")
 {
     std::string directory = "tests/inputs/subset_N/";

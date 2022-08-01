@@ -92,7 +92,6 @@ int findKeyLength(std::string message)
 
     // Get key length with highest index of coincidence
     int keyLength = std::max_element(indexCoincidenceTable.begin(), indexCoincidenceTable.end()) - indexCoincidenceTable.begin();
-
     return keyLength;
 }
 
@@ -126,7 +125,6 @@ char analyzeFrequency(std::string sequence)
             float squaredDifference = pow((observedValues[letter] - FREQUENCY[letter]), 2);
             chiSquaredSum += (squaredDifference / FREQUENCY[letter]);
         }
-        chiSquareds.push_back(chiSquaredSum);
         chiSquareds[offsetValue] = chiSquaredSum;
     }
     int sequenceCharacter = std::min_element(chiSquareds.begin(), chiSquareds.end()) - chiSquareds.begin() + 65;
@@ -136,6 +134,7 @@ char analyzeFrequency(std::string sequence)
 
 std::string guessKeyByMessage(std::string message, std::string language)
 {
+    message = convertToUpper(message);
     int keyLength = findKeyLength(message);
     // Set word frequency based on language
     if (language == "pt")
@@ -163,6 +162,33 @@ std::string findKey(std::string message, int keyLength)
         }
         key.push_back(analyzeFrequency(sequence));
     }
+    return checkDuplicatedSubsetOnKey(key);
+}
 
+std::string checkDuplicatedSubsetOnKey(std::string key)
+{
+    int keySize = (int)key.size();
+    std::string substring;
+    for (int substringSize = (keySize - 1); substringSize > 1; substringSize--)
+    {
+        if ((keySize % substringSize) != 0)
+        {
+            continue;
+        }
+        substring = key.substr(0, substringSize);
+
+        int count = 0;
+
+        for (size_t offset = key.find(substring);
+            offset != std::string::npos;
+            offset = key.find(substring, offset + substring.length()))
+        {
+            ++count;
+        }
+        if ((count > 1) &&((count * (int)substring.size()) == keySize))
+        {
+            return substring;
+        }
+    }
     return key;
 }
