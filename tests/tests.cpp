@@ -5,7 +5,6 @@
 #include "../include/cipher.hpp"
 #include "../include/other.hpp"
 #include "../include/recover.hpp"
-#include "../include/functions.hpp"
 
 std::string messageKey = "ARARA";
 std::string message = "REGULATING THE CIRCULATION";
