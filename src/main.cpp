@@ -33,8 +33,6 @@ void startCipherOrDecipher(char **argv)
 
     if (command == "cifrar")
     {
-        std::cout << "cifrar " << secondArgument << std::endl;
-
         inputMessage = readFromFile("cipher_message.txt");
 
         outputMessage = cipher(inputMessage, secondArgument);
@@ -42,8 +40,6 @@ void startCipherOrDecipher(char **argv)
     }
     else if (command == "decifrar")
     {
-        std::cout << "decifrar " << secondArgument << std::endl;
-
         inputMessage = readFromFile("decipher_message.txt");
 
         outputMessage = decipher(inputMessage, secondArgument);
@@ -52,7 +48,8 @@ void startCipherOrDecipher(char **argv)
     else if (command == "analisar")
     {
         inputMessage = readFromFile("analyze_message.txt");
-        guessKeyByMessage(inputMessage, secondArgument);
+        outputMessage = guessKeyByMessage(inputMessage, secondArgument);
+        std::cout << outputMessage << std::endl;
     }
     else
     {
