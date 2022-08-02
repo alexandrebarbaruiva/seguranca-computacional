@@ -12,7 +12,7 @@ Para tanto, foram criados os arquivos `cipher.cpp` que é a parte que cifra e de
 
 2. Implementar o decifrador com input senha via linha de comando `make` e `./vigenere decifrar $(senha)` usando a mensagem localizada em `decipher_message.txt` e printar a mensagem decifrada na tela do terminal
 
-3. Análise de frequência (TODO: descrever passo a passo.)
+3. Implementar a Análise de frequência com input de lingua via linha de comando `make` e `./vigenere analisar $(lingua)` usando a mensagem localizada em `analyze_message.txt` e printar a chave na tela do terminal
 
 ### Testes
 

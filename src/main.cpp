@@ -61,12 +61,10 @@ void startCipherOrDecipher(char **argv)
 void showInfoMessage()
 {
     std::cout << "Comandos disponíveis:\n";
-    std::cout << "\t`menu` para iniciar a sessão interativa\n";
     std::cout << "\t`cifrar $senha` sendo $senha a palavra a ser usada para cifrar\n";
     std::cout << "\t`decifrar $senha` sendo $senha a palavra a ser usada para decifrar\n";
     std::cout << "\t`analisar $lingua` sendo $lingua igual a `pt` ou `en`\n";
     std::cout << "\nExemplos:\n";
     std::cout << "./vigenere cifrar DINOSSAURO\n";
     std::cout << "./vigenere analisar pt\n";
-    std::cout << "./vigenere menu\n";
 }
