@@ -89,6 +89,11 @@ int findKeyLength(std::string message)
         }
         indexCoincidenceTable.push_back(averageIndexCoincidence);
     }
+    std::cout << "IdC:\n";
+    for (int i = 0; i < (int)indexCoincidenceTable.size(); i++)
+    {
+        std::cout << i << ": " << indexCoincidenceTable[i] << std::endl;
+    }
 
     // Get key length with highest index of coincidence
     int keyLength = std::max_element(indexCoincidenceTable.begin(), indexCoincidenceTable.end()) - indexCoincidenceTable.begin();
@@ -180,12 +185,12 @@ std::string checkDuplicatedSubsetOnKey(std::string key)
         int count = 0;
 
         for (size_t offset = key.find(substring);
-            offset != std::string::npos;
-            offset = key.find(substring, offset + substring.length()))
+             offset != std::string::npos;
+             offset = key.find(substring, offset + substring.length()))
         {
             ++count;
         }
-        if ((count > 1) &&((count * (int)substring.size()) == keySize))
+        if ((count > 1) && ((count * (int)substring.size()) == keySize))
         {
             return substring;
         }
