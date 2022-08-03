@@ -46,12 +46,9 @@ std::string decipher(std::string message, std::string messageKey)
             decipheredMessage.push_back(message[j]);
             continue;
         }
-        else
-        {
-            temp = (message[j] - messageKey[i] + 26) % 26 + 'A';
-            decipheredMessage.push_back(temp);
-            i = (i + 1) % messageKey.size();
-        }
+        temp = (message[j] - messageKey[i] + 26) % 26 + 'A';
+        decipheredMessage.push_back(temp);
+        i = (i + 1) % messageKey.size();
     }
     return decipheredMessage;
 }
